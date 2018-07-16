@@ -1,0 +1,13 @@
+<div (click)="show=!show" class="search">
+  <div class="display-4 inner_text"> Find a specialist</div>
+</div>
+<nav>
+  <div *ngIf="show" class="start_animation slideInRight side_menu">
+    <h3>Menu</h3>
+    <div *ngFor="let item of menuItems.side_menu">
+      <div class="grid_item side_menu_border">
+        <div class="display-4">{{item.title}}</div>
+      </div>
+    </div>
+  </div>
+</nav>

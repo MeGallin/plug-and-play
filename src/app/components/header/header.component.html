@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">Plug & Play</a>
+  <button class="navbar-toggler" (click)="collapse=!collapse" type="button" data-toggle="collapse"  aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse" (click)="collapse=true" [hidden]="collapse">
+    <ul class="navbar-nav mr-auto">
+
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Write a Review </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LogIn</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-info" href="#">Sign up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
